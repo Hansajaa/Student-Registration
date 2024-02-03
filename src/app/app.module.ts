@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { StudentRegistrationComponent } from './pages/student-registration/student-registration.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ViewStudentsComponent } from './pages/view-students/view-students.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     StudentRegistrationComponent,
     FooterComponent,
+    ViewStudentsComponent,
   ],
   imports: [
     BrowserModule,
