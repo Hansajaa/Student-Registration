@@ -1,1 +1,41 @@
-<p>student-registration works!</p>
+<div class="container registration-form">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+    <input type="email" class="form-control" [(ngModel)]="student.firstName"  placeholder="First Name">
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+    <input type="email" class="form-control" [(ngModel)]="student.lastName"  placeholder="Last Name">
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Contact Number</label>
+    <input type="email" class="form-control" [(ngModel)]="student.contactNumber" placeholder="Contact Number">
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Address</label>
+    <input type="email" class="form-control" [(ngModel)]="student.address"  placeholder="Address">
+  </div>
+
+  <button (click)="addStudent()" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Register</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Register Confirmation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Registered
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
