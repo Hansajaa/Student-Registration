@@ -19,23 +19,5 @@
     <input type="email" class="form-control" [(ngModel)]="student.address"  placeholder="Address">
   </div>
 
-  <button (click)="addStudent()" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Register</button>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Register Confirmation</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Registered
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Ok</button>
-      </div>
-    </div>
-  </div>
+  <button (click)="addStudent()" class="btn btn-primary">Register</button>
 </div>

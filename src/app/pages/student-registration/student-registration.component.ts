@@ -1,6 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-student-registration',
   templateUrl: './student-registration.component.html',
@@ -32,7 +32,26 @@ export class StudentRegistrationComponent {
       this.student.lastName=null;
       this.student.contactNumber=null;
       this.student.address=null;
+      this.successAlert();
+    }else{
+      this.warningAlert();
     }
+  }
+
+  successAlert(){
+    Swal.fire({
+      title: "Successfully Student Regitered !",
+      text: "Registered!",
+      icon: "success"
+    });
+  }
+
+  warningAlert(){
+    Swal.fire({
+      title: "Something went wrong!",
+      text: "Enter All Details!",
+      icon: "warning"
+    });
   }
   
 }
